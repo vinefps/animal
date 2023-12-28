@@ -18,6 +18,7 @@ Ferramentas e Bibliotecas Utilizadas
 Dependências de Produção:
 
 Dependências de Produção:</br>
+
 -Next.js: Framework React para renderização no lado do servidor e do cliente. Versão: 13.4.2. </br></br>
 -React e React-DOM: Bibliotecas para construir interfaces de usuário com React. Versão: 18.2.0.</br></br>
 -TailwindCSS: Framework utilitário de CSS de primeira classe para construir designs personalizados rapidamente. Versão: 3.3.2.</br></br>
@@ -26,6 +27,7 @@ Dependências de Produção:</br>
 
 
 Dependências de Desenvolvimento:
+
 -@types/node, @types/react, @types/react-dom: Tipos TypeScript para Node.js e React. Versões: 20.1.4, 18.2.6 e 18.2.4, respectivamente.</br></br>
 -@types/react-modal: Tipos TypeScript para a biblioteca react-modal. Versão: 3.16.0.
 
