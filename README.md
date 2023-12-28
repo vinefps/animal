@@ -17,7 +17,7 @@ Este projeto utiliza várias ferramentas e bibliotecas para desenvolvimento e ex
 Ferramentas e Bibliotecas Utilizadas
 Dependências de Produção:
 
-Dependências de Produção:
+Dependências de Produção:</br>
 -Next.js: Framework React para renderização no lado do servidor e do cliente. Versão: 13.4.2. </br></br>
 -React e React-DOM: Bibliotecas para construir interfaces de usuário com React. Versão: 18.2.0.</br></br>
 -TailwindCSS: Framework utilitário de CSS de primeira classe para construir designs personalizados rapidamente. Versão: 3.3.2.</br></br>
