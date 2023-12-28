@@ -14,8 +14,7 @@ node --version
 
 Este projeto utiliza várias ferramentas e bibliotecas para desenvolvimento e execução. Abaixo estão as principais ferramentas e como você pode instalá-las usando o npm no terminal do VSCode.
 
-Ferramentas e Bibliotecas Utilizadas
-Dependências de Produção:
+# Ferramentas e Bibliotecas Utilizadas Dependências de Produção:
 
 Dependências de Produção:</br>
 
@@ -32,7 +31,7 @@ Dependências de Desenvolvimento:
 -@types/react-modal: Tipos TypeScript para a biblioteca react-modal. Versão: 3.16.0.
 
 
-Como Instalar as Ferramentas
+# Como Instalar as Ferramentas
 Para instalar todas as ferramentas e bibliotecas necessárias, siga os passos abaixo:
 
 Abra o terminal do VSCode.
