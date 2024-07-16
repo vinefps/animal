@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const dogs = [
   {
@@ -32,7 +33,7 @@ const Collie = () => {
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-blue-500 py-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-semibold text-white">Cachorro Border Collie Disponíveis para Adoção:</h1>
+          <h1 className="text-4xl font-semibold text-white">Cachorros Border Collie Disponíveis para Adoção:</h1>
         </div>
       </header>
       <div className="container mx-auto py-8">
@@ -42,7 +43,7 @@ const Collie = () => {
               key={index}
               className="bg-white rounded-lg shadow-md p-4"
             >
-              <img className="rounded-lg mb-4" src={dog.photo} alt={dog.name} />
+              <Image className="rounded-lg mb-4" src={dog.photo} alt={dog.name} width={500} height={300} />
               <h2 className="text-xl font-semibold mb-2">{dog.name}</h2>
               <p className="text-gray-600 mb-2">{dog.description}</p>
               <div className="flex justify-between text-gray-500">
