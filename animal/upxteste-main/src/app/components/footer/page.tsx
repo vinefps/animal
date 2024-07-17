@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export function Footer() {
+function Footer() {
     return (
         <footer className="mt-[900px] md:mt-0 bg-blue-500 py-8 w-full">
             <div className="container mx-auto px-4">
@@ -53,3 +53,5 @@ export function Footer() {
         </footer>
     )
 }
+
+export default Footer;
