@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const Second = () => {
+const Second = () => {
   return (
     <section className="flex flex-col items-center mt-10 md:mt-20 border-b-2 md:border-x-2">
       <div className="border-b-2 border-x-2 font-bold">
@@ -82,3 +82,5 @@ export const Second = () => {
     </section>
   );
 };
+
+export default Second;

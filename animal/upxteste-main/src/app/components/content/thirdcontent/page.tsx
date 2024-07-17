@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const Third = () => {
+const Third = () => {
   return (
     <section className="mt-8 mx-auto sm:mt-16 md:mt-24 max-w-7xl px-4 md:px-8 mb-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-16 mt-8 sm:mt-20 pb-4">
@@ -61,3 +61,5 @@ export const Third = () => {
     </section>
   );
 };
+
+export default Third;
