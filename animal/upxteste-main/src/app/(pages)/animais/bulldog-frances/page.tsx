@@ -1,30 +1,34 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const dogs = [
   {
-    name: 'Dog 1',
-    photo: '/imgs/bulldogf/bulldogf1.jpg',
-    description: 'Descrição do cachorro 1.',
-    age: '2 anos',
-    gender: 'Macho',
-    location: 'São Paulo, SP',
+    name: "Dog 1",
+    photo: "/imgs/bulldogf/bulldogf1.jpg",
+    description: "Descrição do cachorro 1.",
+    age: "2 anos",
+    gender: "Macho",
+    location: "São Paulo, SP",
+    adoptionLink: "/adopt/dog1",
   },
   {
-    name: 'Dog 2',
-    photo: '/imgs/bulldogf/bulldogf2.jpg',
-    description: 'Descrição do cachorro 2.',
-    age: '3 anos',
-    gender: 'Fêmea',
-    location: 'Rio de Janeiro, RJ',
+    name: "Dog 2",
+    photo: "/imgs/bulldogf/bulldogf2.jpg",
+    description: "Descrição do cachorro 2.",
+    age: "3 anos",
+    gender: "Fêmea",
+    location: "Rio de Janeiro, RJ",
+    adoptionLink: "/adopt/dog2",
   },
   {
-    name: 'Dog 3',
-    photo: '/imgs/bulldogf/bulldogf3.jpg',
-    description: 'Descrição do cachorro 3.',
-    age: '1 ano',
-    gender: 'Macho',
-    location: 'Belo Horizonte, MG',
+    name: "Dog 3",
+    photo: "/imgs/bulldogf/bulldogf3.jpg",
+    description: "Descrição do cachorro 3.",
+    age: "1 ano",
+    gender: "Macho",
+    location: "Belo Horizonte, MG",
+    adoptionLink: "/adopt/dog3",
   },
 ];
 
@@ -33,7 +37,9 @@ const Bulldogf = () => {
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-blue-500 py-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-semibold text-white">Cachorros Bulldog Disponíveis para Adoção:</h1>
+          <h1 className="text-4xl font-semibold text-white">
+            Cachorros Bulldog Disponíveis para Adoção:
+          </h1>
         </div>
       </header>
       <div className="container mx-auto py-8">
@@ -41,11 +47,15 @@ const Bulldogf = () => {
           {dogs.map((dog, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-4"
+              className="bg-white rounded-lg shadow-md p-4 transition-transform transform hover:scale-105"
             >
-              <div className="rounded-lg mb-4">
-                <Image src={dog.photo} alt={dog.name} width={500} height={300} className="rounded-lg" />
-              </div>
+              <Image
+                className="rounded-lg mb-4"
+                src={dog.photo}
+                alt={dog.name}
+                width={500}
+                height={300}
+              />
               <h2 className="text-xl font-semibold mb-2">{dog.name}</h2>
               <p className="text-gray-600 mb-2">{dog.description}</p>
               <div className="flex justify-between text-gray-500">
@@ -54,7 +64,11 @@ const Bulldogf = () => {
               </div>
               <div className="flex justify-between text-gray-500 mt-2">
                 <p>{dog.location}</p>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Adotar</button>
+                <Link href={dog.adoptionLink}>
+                  <span className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+                    Adotar
+                  </span>
+                </Link>
               </div>
             </div>
           ))}
